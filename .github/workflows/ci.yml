@@ -25,3 +25,7 @@ jobs:
 
       - name: Run tests
         run: pytest -q
+
+      - name: Check content quality
+        working-directory: ${{ github.workspace }}
+        run: python scripts/check_content_quality.py

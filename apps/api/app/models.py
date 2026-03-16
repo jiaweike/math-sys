@@ -14,7 +14,10 @@ class Theorem(Base):
     proof_md = Column(Text, nullable=False)
     conditions = Column(Text, nullable=True)
     tags = Column(String(255), nullable=True)
-    refs = Column(Text, nullable=True)
+    refs = Column(Text, nullable=False)
+    source_url = Column(Text, nullable=True)
+    source_license = Column(String(100), nullable=True)
+    review_status = Column(String(32), nullable=False, default="draft")
 
 
 class Formula(Base):
@@ -26,7 +29,10 @@ class Formula(Base):
     meaning = Column(Text, nullable=False)
     constraints = Column(Text, nullable=True)
     examples = Column(Text, nullable=True)
-    refs = Column(Text, nullable=True)
+    refs = Column(Text, nullable=False)
+    source_url = Column(Text, nullable=True)
+    source_license = Column(String(100), nullable=True)
+    review_status = Column(String(32), nullable=False, default="draft")
 
 
 class Algorithm(Base):

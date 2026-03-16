@@ -3,11 +3,15 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 
 from .db import Base, SessionLocal, engine, get_db
+from .jobs import enqueue_render, get_job_status
 from .models import Formula, Theorem
 from .schemas import (
     FormulaOut,
     IngestRequest,
     IngestResponse,
+    JobStatusResponse,
+    RenderRequest,
+    RenderResponse,
     SearchResponse,
     TheoremOut,
     TraceRequest,
@@ -76,10 +80,13 @@ def get_formula(formula_id: int, db: Session = Depends(get_db)) -> FormulaOut:
 def ingest_doc(payload: IngestRequest, db: Session = Depends(get_db)) -> IngestResponse:
     inserted_theorems = 0
     inserted_formulas = 0
+    skipped_theorems = 0
+    skipped_formulas = 0
 
     for item in payload.theorems:
         exists = db.query(Theorem).filter(Theorem.name == item.name).first()
         if exists:
+            skipped_theorems += 1
             continue
         db.add(Theorem(**item.model_dump()))
         inserted_theorems += 1
@@ -87,6 +94,7 @@ def ingest_doc(payload: IngestRequest, db: Session = Depends(get_db)) -> IngestR
     for item in payload.formulas:
         exists = db.query(Formula).filter(Formula.name == item.name).first()
         if exists:
+            skipped_formulas += 1
             continue
         db.add(Formula(**item.model_dump()))
         inserted_formulas += 1
@@ -95,7 +103,29 @@ def ingest_doc(payload: IngestRequest, db: Session = Depends(get_db)) -> IngestR
     return IngestResponse(
         inserted_theorems=inserted_theorems,
         inserted_formulas=inserted_formulas,
+        skipped_theorems=skipped_theorems,
+        skipped_formulas=skipped_formulas,
     )
+
+
+@app.post("/api/animations/render", response_model=RenderResponse)
+def render_trace(payload: RenderRequest) -> RenderResponse:
+    try:
+        job_id = enqueue_render(payload.trace)
+    except Exception as exc:
+        raise HTTPException(status_code=503, detail=f"render queue unavailable: {exc}") from exc
+
+    return RenderResponse(job_id=job_id, status="queued")
+
+
+@app.get("/api/jobs/{job_id}", response_model=JobStatusResponse)
+def get_job(job_id: str) -> JobStatusResponse:
+    try:
+        return JobStatusResponse(**get_job_status(job_id))
+    except Exception as exc:
+        if exc.__class__.__name__ == "NoSuchJobError":
+            raise HTTPException(status_code=404, detail="job not found") from exc
+        raise HTTPException(status_code=503, detail=f"job backend unavailable: {exc}") from exc
 
 
 @app.post("/api/animations/trace", response_model=TraceResponse)

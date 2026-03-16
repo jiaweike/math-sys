@@ -7,7 +7,10 @@
       "proof_md": "For right triangles, compare areas by geometric rearrangement.",
       "conditions": "Right triangle",
       "tags": "geometry,triangle",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Binomial Theorem",
@@ -16,7 +19,10 @@
       "proof_md": "Expand product and count selections by combinations.",
       "conditions": "n in N",
       "tags": "algebra,combinatorics",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "AM-GM Inequality",
@@ -25,7 +31,10 @@
       "proof_md": "Use (sqrt(a)-sqrt(b))^2 >= 0.",
       "conditions": "a,b >= 0",
       "tags": "inequality,algebra",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Cauchy-Schwarz Inequality",
@@ -34,7 +43,10 @@
       "proof_md": "Consider non-negativity of ||ta-b||^2 and optimize t.",
       "conditions": "Real vectors",
       "tags": "inequality,linear-algebra",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Triangle Inequality",
@@ -43,7 +55,10 @@
       "proof_md": "Square both sides and use positivity of inner products.",
       "conditions": "Normed spaces",
       "tags": "analysis,geometry",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Fundamental Theorem of Arithmetic",
@@ -52,7 +67,10 @@
       "proof_md": "Existence by induction, uniqueness via Euclid's lemma.",
       "conditions": "n > 1",
       "tags": "number-theory",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Euclid's Lemma",
@@ -61,7 +79,10 @@
       "proof_md": "Use Bezout identity and divisibility closure.",
       "conditions": "p prime",
       "tags": "number-theory",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Chinese Remainder Theorem",
@@ -70,7 +91,10 @@
       "proof_md": "Construct solution with modular inverses.",
       "conditions": "gcd(m_i,m_j)=1",
       "tags": "number-theory,congruence",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Fermat Little Theorem",
@@ -79,7 +103,10 @@
       "proof_md": "Use permutation of nonzero residues modulo p.",
       "conditions": "p prime, p does not divide a",
       "tags": "number-theory",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Euler Theorem",
@@ -88,7 +115,10 @@
       "proof_md": "Generalize Fermat via reduced residue system.",
       "conditions": "gcd(a,n)=1",
       "tags": "number-theory",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Bayes Theorem",
@@ -97,7 +127,10 @@
       "proof_md": "From definition of conditional probability.",
       "conditions": "P(B)>0",
       "tags": "probability",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Law of Total Probability",
@@ -106,7 +139,10 @@
       "proof_md": "Partition sample space by mutually exclusive events.",
       "conditions": "{A_i} partition",
       "tags": "probability",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Central Limit Theorem",
@@ -115,7 +151,10 @@
       "proof_md": "Use characteristic functions or Lindeberg approach.",
       "conditions": "i.i.d., finite variance",
       "tags": "probability,statistics",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Weak Law of Large Numbers",
@@ -124,7 +163,10 @@
       "proof_md": "Apply Chebyshev inequality to sample mean variance.",
       "conditions": "i.i.d., finite variance",
       "tags": "probability,statistics",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Taylor Theorem",
@@ -133,7 +175,10 @@
       "proof_md": "Repeated integration or mean value theorem.",
       "conditions": "f has n+1 derivatives",
       "tags": "analysis",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Mean Value Theorem",
@@ -142,7 +187,10 @@
       "proof_md": "Apply Rolle theorem to adjusted function.",
       "conditions": "f continuous on [a,b], differentiable on (a,b)",
       "tags": "analysis",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Rolle Theorem",
@@ -151,7 +199,10 @@
       "proof_md": "Use extreme value theorem and interior extremum.",
       "conditions": "f continuous and differentiable",
       "tags": "analysis",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Fundamental Theorem of Calculus",
@@ -160,7 +211,10 @@
       "proof_md": "Link accumulated area and derivative limits.",
       "conditions": "f continuous",
       "tags": "analysis,calculus",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Green's Theorem",
@@ -169,7 +223,10 @@
       "proof_md": "Partition region and cancel interior boundary terms.",
       "conditions": "Smooth boundary",
       "tags": "vector-calculus",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Stokes' Theorem",
@@ -178,7 +235,10 @@
       "proof_md": "Approximate surface by patches and sum boundary contributions.",
       "conditions": "Oriented smooth surface",
       "tags": "vector-calculus",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Divergence Theorem",
@@ -187,7 +247,10 @@
       "proof_md": "Apply to boxes then pass to limits.",
       "conditions": "Piecewise smooth boundary",
       "tags": "vector-calculus",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Rank-Nullity Theorem",
@@ -196,7 +259,10 @@
       "proof_md": "Extend kernel basis to basis of V and map under T.",
       "conditions": "Finite-dimensional vector spaces",
       "tags": "linear-algebra",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Spectral Theorem (Real Symmetric)",
@@ -205,7 +271,10 @@
       "proof_md": "Use existence of orthonormal eigenbasis.",
       "conditions": "A is real symmetric",
       "tags": "linear-algebra",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Jordan Curve Theorem",
@@ -214,7 +283,10 @@
       "proof_md": "Topological proof via winding numbers.",
       "conditions": "Simple closed curve",
       "tags": "topology",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Inclusion-Exclusion Principle",
@@ -223,7 +295,10 @@
       "proof_md": "Count overlaps with alternating sums.",
       "conditions": "Finite sets",
       "tags": "combinatorics",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     }
   ],
   "formulas": [
@@ -233,7 +308,10 @@
       "meaning": "Roots of ax^2+bx+c=0.",
       "constraints": "a != 0",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Euler Formula",
@@ -241,7 +319,10 @@
       "meaning": "Connect complex exponentials and trig.",
       "constraints": "x in R",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Geometric Series",
@@ -249,7 +330,10 @@
       "meaning": "Finite geometric progression sum.",
       "constraints": "r != 1",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Arithmetic Series",
@@ -257,7 +341,10 @@
       "meaning": "Sum of first n integers.",
       "constraints": "n in N",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Harmonic Number Approx",
@@ -265,7 +352,10 @@
       "meaning": "Asymptotic approximation.",
       "constraints": "n large",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Combination Count",
@@ -273,7 +363,10 @@
       "meaning": "Number of k-subsets.",
       "constraints": "0 <= k <= n",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Permutation Count",
@@ -281,7 +374,10 @@
       "meaning": "Number of ordered selections.",
       "constraints": "0 <= k <= n",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Distance Formula",
@@ -289,7 +385,10 @@
       "meaning": "Distance in 2D Cartesian coordinates.",
       "constraints": "Real coordinates",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Slope Formula",
@@ -297,7 +396,10 @@
       "meaning": "Slope of line through two points.",
       "constraints": "x1 != x2",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Area of Triangle",
@@ -305,7 +407,10 @@
       "meaning": "Basic Euclidean triangle area.",
       "constraints": "base,height >= 0",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Heron Formula",
@@ -313,7 +418,10 @@
       "meaning": "Triangle area from side lengths.",
       "constraints": "s=(a+b+c)/2",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Circle Area",
@@ -321,7 +429,10 @@
       "meaning": "Area of circle.",
       "constraints": "r >= 0",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Circle Circumference",
@@ -329,7 +440,10 @@
       "meaning": "Perimeter of circle.",
       "constraints": "r >= 0",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Derivative Power Rule",
@@ -337,7 +451,10 @@
       "meaning": "Derivative of power function.",
       "constraints": "n real in domain",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Product Rule",
@@ -345,7 +462,10 @@
       "meaning": "Derivative of product.",
       "constraints": "f,g differentiable",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Chain Rule",
@@ -353,7 +473,10 @@
       "meaning": "Derivative of composition.",
       "constraints": "f,g differentiable",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Integration by Parts",
@@ -361,7 +484,10 @@
       "meaning": "Compute hard integrals by transfer.",
       "constraints": "u,v differentiable",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Gaussian Density",
@@ -369,7 +495,10 @@
       "meaning": "Normal distribution density.",
       "constraints": "sigma > 0",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Variance Formula",
@@ -377,7 +506,10 @@
       "meaning": "Alternative variance definition.",
       "constraints": "Second moment finite",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Covariance Formula",
@@ -385,7 +517,10 @@
       "meaning": "Linear dependence measure.",
       "constraints": "Moments finite",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Pearson Correlation",
@@ -393,7 +528,10 @@
       "meaning": "Normalized covariance.",
       "constraints": "sigma_X,sigma_Y>0",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Log Change of Base",
@@ -401,7 +539,10 @@
       "meaning": "Convert logarithm bases.",
       "constraints": "a>0,a!=1,b>0",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Matrix Inverse 2x2",
@@ -409,7 +550,10 @@
       "meaning": "Inverse of 2x2 matrix.",
       "constraints": "ad-bc != 0",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Dot Product",
@@ -417,7 +561,10 @@
       "meaning": "Relate dot product and angle.",
       "constraints": "Vectors in inner product space",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     },
     {
       "name": "Cross Product Magnitude",
@@ -425,7 +572,10 @@
       "meaning": "Area of parallelogram spanned by vectors.",
       "constraints": "3D vectors",
       "examples": "",
-      "refs": "Open textbook references (replace with exact citation page during review)."
+      "refs": "Open textbook references (replace with exact citation page during review).",
+      "source_url": "",
+      "source_license": "",
+      "review_status": "draft"
     }
   ]
 }

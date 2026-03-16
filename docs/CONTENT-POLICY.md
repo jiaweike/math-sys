@@ -22,13 +22,19 @@ Do not paste textbook proofs without explicit permission.
 
 ## Review levels
 
-Recommended `review_status` conventions (to be added to schema):
+Schema fields:
+
+- `review_status`: `draft` | `reviewed` | `verified`
+- `source_license`: required when `review_status` is `reviewed` or `verified`
+- `source_url`: optional, recommended when referencing a web source
+
+Definitions:
 
 - `draft`: newly ingested, not checked
 - `reviewed`: checked by a human for correctness and assumptions
 - `verified`: machine-checkable (e.g. Lean/Coq) or proven against a formal reference
 
-UI should always display `refs` and the current review level.
+UI should always display `refs` and `review_status`.
 
 ## "No citation, no proof" rule (recommended)
 

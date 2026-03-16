@@ -16,6 +16,9 @@ class SearchResponse(BaseModel):
     items: list[SearchItem]
 
 
+ReviewStatus = Literal["draft", "reviewed", "verified"]
+
+
 class TheoremOut(BaseModel):
     id: int
     name: str
@@ -24,7 +27,10 @@ class TheoremOut(BaseModel):
     proof_md: str
     conditions: str | None = None
     tags: str | None = None
-    refs: str | None = None
+    refs: str
+    source_url: str | None = None
+    source_license: str | None = None
+    review_status: ReviewStatus = "draft"
 
     class Config:
         from_attributes = True
@@ -37,7 +43,10 @@ class FormulaOut(BaseModel):
     meaning: str
     constraints: str | None = None
     examples: str | None = None
-    refs: str | None = None
+    refs: str
+    source_url: str | None = None
+    source_license: str | None = None
+    review_status: ReviewStatus = "draft"
 
     class Config:
         from_attributes = True
@@ -69,7 +78,10 @@ class IngestTheoremIn(BaseModel):
     proof_md: str
     conditions: str | None = None
     tags: str | None = None
-    refs: str | None = None
+    refs: str = Field(..., min_length=3)
+    source_url: str | None = None
+    source_license: str | None = None
+    review_status: ReviewStatus = "draft"
 
 
 class IngestFormulaIn(BaseModel):
@@ -78,7 +90,10 @@ class IngestFormulaIn(BaseModel):
     meaning: str
     constraints: str | None = None
     examples: str | None = None
-    refs: str | None = None
+    refs: str = Field(..., min_length=3)
+    source_url: str | None = None
+    source_license: str | None = None
+    review_status: ReviewStatus = "draft"
 
 
 class IngestRequest(BaseModel):
@@ -89,3 +104,23 @@ class IngestRequest(BaseModel):
 class IngestResponse(BaseModel):
     inserted_theorems: int
     inserted_formulas: int
+    skipped_theorems: int
+    skipped_formulas: int
+
+
+class RenderRequest(BaseModel):
+    trace: dict
+
+
+class RenderResponse(BaseModel):
+    job_id: str
+    status: str
+
+
+class JobStatusResponse(BaseModel):
+    job_id: str
+    status: str
+    enqueued_at: str | None = None
+    ended_at: str | None = None
+    result: dict | None = None
+    error: str | None = None

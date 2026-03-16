@@ -22,6 +22,8 @@ def seed_if_needed(db: Session) -> None:
                 conditions="Right triangle",
                 tags="geometry,triangle",
                 refs="Euclid Elements I.47",
+                source_license="public-domain",
+                review_status="reviewed",
             ),
             Theorem(
                 name="Binomial Theorem",
@@ -34,6 +36,8 @@ def seed_if_needed(db: Session) -> None:
                 conditions="n is a non-negative integer",
                 tags="algebra,combinatorics",
                 refs="Classical algebra textbooks",
+                source_license="public-domain",
+                review_status="reviewed",
             ),
         ]
     )
@@ -47,6 +51,8 @@ def seed_if_needed(db: Session) -> None:
                 constraints="Discriminant b^2-4ac determines root type",
                 examples="x^2-5x+6=0 => x=2,3",
                 refs="Elementary algebra",
+                source_license="public-domain",
+                review_status="reviewed",
             ),
             Formula(
                 name="Euler Formula",
@@ -55,6 +61,8 @@ def seed_if_needed(db: Session) -> None:
                 constraints="x is real",
                 examples=r"x=pi => e^{i\pi}+1=0",
                 refs="Complex analysis",
+                source_license="public-domain",
+                review_status="reviewed",
             ),
         ]
     )

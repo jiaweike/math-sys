@@ -14,10 +14,12 @@ Current repository includes:
   - `GET /api/formulas/{id}`
   - `POST /api/ingest/doc`
   - `POST /api/animations/trace`
+  - `POST /api/animations/render`
+  - `GET /api/jobs/{job_id}`
 - Web demo pages for search/detail + trace player controls
-- PostgreSQL + Redis + Qdrant via Docker Compose
-- SQL bootstrap and seed data
-- Retrieval evaluation script (`scripts/eval_retrieval.py`)
+- Docker Compose stack with `api`, `web`, `worker`, `postgres`, `redis`, `qdrant`
+- SQL bootstrap and content-quality migration scripts
+- Retrieval evaluation + content quality scripts
 
 ## Quick start
 
@@ -54,6 +56,7 @@ docs/
 ## Utility scripts
 
 - Generate 50 sample entries: `python scripts/generate_seed50.py`
+- Check content quality: `python scripts/check_content_quality.py`
 - Ingest sample payload: `powershell -File scripts/ingest-sample.ps1`
 - Evaluate retrieval quality: `python scripts/eval_retrieval.py --api http://localhost:8000 --k 10`
 

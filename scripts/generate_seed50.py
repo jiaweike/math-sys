@@ -68,6 +68,9 @@ def theorem_item(row):
         "conditions": conditions,
         "tags": tags,
         "refs": "Open textbook references (replace with exact citation page during review).",
+        "source_url": "",
+        "source_license": "",
+        "review_status": "draft",
     }
 
 
@@ -80,6 +83,9 @@ def formula_item(row):
         "constraints": constraints,
         "examples": "",
         "refs": "Open textbook references (replace with exact citation page during review).",
+        "source_url": "",
+        "source_license": "",
+        "review_status": "draft",
     }
 
 

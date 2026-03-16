@@ -6,7 +6,10 @@ CREATE TABLE IF NOT EXISTS theorem (
   proof_md TEXT NOT NULL,
   conditions TEXT,
   tags VARCHAR(255),
-  refs TEXT
+  refs TEXT NOT NULL,
+  source_url TEXT,
+  source_license VARCHAR(100),
+  review_status VARCHAR(32) NOT NULL DEFAULT 'draft'
 );
 
 CREATE TABLE IF NOT EXISTS formula (
@@ -16,7 +19,10 @@ CREATE TABLE IF NOT EXISTS formula (
   meaning TEXT NOT NULL,
   constraints TEXT,
   examples TEXT,
-  refs TEXT
+  refs TEXT NOT NULL,
+  source_url TEXT,
+  source_license VARCHAR(100),
+  review_status VARCHAR(32) NOT NULL DEFAULT 'draft'
 );
 
 CREATE TABLE IF NOT EXISTS algo (
