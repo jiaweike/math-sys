@@ -1,0 +1,12 @@
+[
+  {"query": "pythagorean", "type": "theorem", "expected_title": "Pythagorean Theorem"},
+  {"query": "binomial", "type": "theorem", "expected_title": "Binomial Theorem"},
+  {"query": "bayes", "type": "theorem", "expected_title": "Bayes Theorem"},
+  {"query": "quadratic", "type": "formula", "expected_title": "Quadratic Formula"},
+  {"query": "euler", "type": "formula", "expected_title": "Euler Formula"},
+  {"query": "geometric series", "type": "formula", "expected_title": "Geometric Series"},
+  {"query": "triangle inequality", "type": "theorem", "expected_title": "Triangle Inequality"},
+  {"query": "rank nullity", "type": "theorem", "expected_title": "Rank-Nullity Theorem"},
+  {"query": "variance", "type": "formula", "expected_title": "Variance Formula"},
+  {"query": "chain rule", "type": "formula", "expected_title": "Chain Rule"}
+]

@@ -11,12 +11,14 @@ Build a runnable baseline for theorem/formula search with proof display and basi
 - Seed content for sample theorems and formulas
 - Initial SQL schema
 - Ingest endpoint (`POST /api/ingest/doc`)
-- Basic web demo page for search and detail
+- Basic web demo page for search/detail and trace playback controls
 - API smoke tests and CI workflow
+- 50-sample seed generator (`scripts/generate_seed_50.py`)
+- Retrieval benchmark script (`scripts/eval_retrieval.py`)
 
 ## Remaining for M0 completion
 
-1. Add first 50 curated entries (theorem/formula/proof)
+1. Curate and review 50 entries with exact citation page-level refs
 2. Add content quality checks (source citation + review status)
-3. Add retrieval benchmark script (Recall@k, MRR, NDCG@10)
-4. Add worker process for async ingest and render jobs
+3. Add worker process for async ingest and render jobs
+4. Run full E2E verification once Docker engine is available

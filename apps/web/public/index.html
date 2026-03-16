@@ -9,20 +9,54 @@
   <body>
     <main class="app">
       <h1>math-sys</h1>
-      <p class="hint">Search theorems and formulas. Click a result to view detail.</p>
+      <p class="hint">Search theorems and formulas, then explore algorithm trace playback.</p>
 
-      <section class="search-panel">
-        <input id="query" type="text" placeholder="e.g. pythagorean" />
-        <select id="kind">
-          <option value="all">all</option>
-          <option value="theorem">theorem</option>
-          <option value="formula">formula</option>
-        </select>
-        <button id="searchBtn">Search</button>
+      <section class="card">
+        <h2>Knowledge Search</h2>
+        <div class="search-panel">
+          <input id="query" type="text" placeholder="e.g. pythagorean" />
+          <select id="kind">
+            <option value="all">all</option>
+            <option value="theorem">theorem</option>
+            <option value="formula">formula</option>
+          </select>
+          <button id="searchBtn">Search</button>
+        </div>
+        <section id="results" class="results"></section>
+        <section id="detail" class="detail">Select a result to show detail.</section>
       </section>
 
-      <section id="results" class="results"></section>
-      <section id="detail" class="detail"></section>
+      <section class="card">
+        <h2>Algorithm Animation (Trace Player)</h2>
+        <div class="anim-config">
+          <select id="algoType">
+            <option value="binary_search">binary_search</option>
+            <option value="bubble_sort">bubble_sort</option>
+          </select>
+          <input id="algoArray" type="text" value="1,3,5,7,9" placeholder="comma-separated integers" />
+          <input id="algoTarget" type="number" value="7" placeholder="target for binary_search" />
+          <button id="genTraceBtn">Generate Trace</button>
+        </div>
+        <div class="player-controls">
+          <button id="prevStepBtn">Prev</button>
+          <button id="playPauseBtn">Play</button>
+          <button id="nextStepBtn">Next</button>
+          <label for="speedRange">Speed</label>
+          <input id="speedRange" type="range" min="200" max="2000" step="100" value="900" />
+          <span id="stepCounter">step 0/0</span>
+        </div>
+        <div class="trace-view">
+          <div>
+            <h3>Array State</h3>
+            <div id="arrayState" class="array-state"></div>
+          </div>
+          <div>
+            <h3>Caption</h3>
+            <p id="stepCaption" class="caption">No trace yet.</p>
+            <pre id="stepMeta" class="detail"></pre>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="./main.js"></script>
