@@ -1,6 +1,6 @@
 from typing import Literal
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class SearchItem(BaseModel):
@@ -60,3 +60,32 @@ class TraceStep(BaseModel):
 class TraceResponse(BaseModel):
     algorithm: str
     steps: list[TraceStep]
+
+
+class IngestTheoremIn(BaseModel):
+    name: str
+    aliases: str | None = None
+    statement_latex: str
+    proof_md: str
+    conditions: str | None = None
+    tags: str | None = None
+    refs: str | None = None
+
+
+class IngestFormulaIn(BaseModel):
+    name: str
+    latex: str
+    meaning: str
+    constraints: str | None = None
+    examples: str | None = None
+    refs: str | None = None
+
+
+class IngestRequest(BaseModel):
+    theorems: list[IngestTheoremIn] = Field(default_factory=list)
+    formulas: list[IngestFormulaIn] = Field(default_factory=list)
+
+
+class IngestResponse(BaseModel):
+    inserted_theorems: int
+    inserted_formulas: int

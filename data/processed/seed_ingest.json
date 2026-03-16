@@ -1,0 +1,23 @@
+{
+  "theorems": [
+    {
+      "name": "AM-GM Inequality",
+      "aliases": "Arithmetic-geometric mean inequality",
+      "statement_latex": "\\frac{a+b}{2} \\geq \\sqrt{ab}",
+      "proof_md": "For non-negative a,b, note that (sqrt(a)-sqrt(b))^2 >= 0. Expand and rearrange.",
+      "conditions": "a,b >= 0",
+      "tags": "inequality,algebra",
+      "refs": "Classical inequality references"
+    }
+  ],
+  "formulas": [
+    {
+      "name": "Geometric Series",
+      "latex": "\\sum_{k=0}^{n} ar^k = a\\frac{1-r^{n+1}}{1-r}",
+      "meaning": "Closed form of finite geometric progression for r != 1.",
+      "constraints": "r != 1",
+      "examples": "a=1,r=2,n=3 => 15",
+      "refs": "Elementary algebra"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+:root {
+  color-scheme: light;
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --text: #1d2433;
+  --muted: #5f6a7d;
+  --line: #d6dcea;
+  --accent: #2457f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #f7f9ff 0%, #eef2fa 100%);
+  color: var(--text);
+  font-family: "Segoe UI", "PingFang SC", sans-serif;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 28px 16px 60px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.hint {
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+.search-panel {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 160px 120px;
+  gap: 10px;
+}
+
+input,
+select,
+button {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+
+.results {
+  margin-top: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.item h3 {
+  margin: 0 0 6px;
+}
+
+.item p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.detail {
+  margin-top: 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 720px) {
+  .search-panel {
+    grid-template-columns: 1fr;
+  }
+}

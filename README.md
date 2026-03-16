@@ -32,7 +32,8 @@ docker compose up --build
 
 3. Open API docs:
 
-- http://localhost:8000/docs
+- API docs: http://localhost:8000/docs
+- Web demo: http://localhost:3000
 
 ## Project layout
 

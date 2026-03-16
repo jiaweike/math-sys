@@ -1,15 +1,32 @@
 from fastapi import Depends, FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 
 from .db import Base, SessionLocal, engine, get_db
 from .models import Formula, Theorem
-from .schemas import FormulaOut, SearchResponse, TheoremOut, TraceRequest, TraceResponse
+from .schemas import (
+    FormulaOut,
+    IngestRequest,
+    IngestResponse,
+    SearchResponse,
+    TheoremOut,
+    TraceRequest,
+    TraceResponse,
+)
 from .search import search_knowledge
 from .seed import seed_if_needed
 from .trace import binary_search_trace, bubble_sort_trace
 from .config import settings
 
 app = FastAPI(title="math-sys api", version="0.1.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.on_event("startup")
@@ -53,6 +70,32 @@ def get_formula(formula_id: int, db: Session = Depends(get_db)) -> FormulaOut:
     if not row:
         raise HTTPException(status_code=404, detail="formula not found")
     return row
+
+
+@app.post("/api/ingest/doc", response_model=IngestResponse)
+def ingest_doc(payload: IngestRequest, db: Session = Depends(get_db)) -> IngestResponse:
+    inserted_theorems = 0
+    inserted_formulas = 0
+
+    for item in payload.theorems:
+        exists = db.query(Theorem).filter(Theorem.name == item.name).first()
+        if exists:
+            continue
+        db.add(Theorem(**item.model_dump()))
+        inserted_theorems += 1
+
+    for item in payload.formulas:
+        exists = db.query(Formula).filter(Formula.name == item.name).first()
+        if exists:
+            continue
+        db.add(Formula(**item.model_dump()))
+        inserted_formulas += 1
+
+    db.commit()
+    return IngestResponse(
+        inserted_theorems=inserted_theorems,
+        inserted_formulas=inserted_formulas,
+    )
 
 
 @app.post("/api/animations/trace", response_model=TraceResponse)
