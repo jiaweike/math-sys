@@ -13,7 +13,7 @@ Build a runnable baseline for theorem/formula search with proof display and basi
 - Ingest endpoint (`POST /api/ingest/doc`)
 - Basic web demo page for search/detail and trace playback controls
 - API smoke tests and CI workflow
-- 50-sample seed generator (`scripts/generate_seed_50.py`)
+- 50-sample seed generator (`scripts/generate_seed50.py`)
 - Retrieval benchmark script (`scripts/eval_retrieval.py`)
 
 ## Remaining for M0 completion

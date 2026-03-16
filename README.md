@@ -53,9 +53,9 @@ docs/
 
 ## Utility scripts
 
-- Generate 50 sample entries: `python scripts/generate_seed_50.py`
+- Generate 50 sample entries: `python scripts/generate_seed50.py`
 - Ingest sample payload: `powershell -File scripts/ingest-sample.ps1`
-- Evaluate retrieval quality: `python scripts/eval_retrieval.py --api-base http://localhost:8000 --top-k 10`
+- Evaluate retrieval quality: `python scripts/eval_retrieval.py --api http://localhost:8000 --k 10`
 
 ## Next step
 

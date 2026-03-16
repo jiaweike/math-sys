@@ -77,7 +77,7 @@
       "aliases": "",
       "statement_latex": "a^(p-1) = 1 mod p",
       "proof_md": "Use permutation of nonzero residues modulo p.",
-      "conditions": "p prime, p not divide a",
+      "conditions": "p prime, p does not divide a",
       "tags": "number-theory",
       "refs": "Open textbook references (replace with exact citation page during review)."
     },
@@ -111,7 +111,7 @@
     {
       "name": "Central Limit Theorem",
       "aliases": "",
-      "statement_latex": "(sum X_i - n mu)/(sigma sqrt(n)) => N(0,1)",
+      "statement_latex": "(sum X_i - n mu)/(sigma sqrt(n)) -> N(0,1)",
       "proof_md": "Use characteristic functions or Lindeberg approach.",
       "conditions": "i.i.d., finite variance",
       "tags": "probability,statistics",
@@ -219,7 +219,7 @@
     {
       "name": "Inclusion-Exclusion Principle",
       "aliases": "",
-      "statement_latex": "|A union B| = |A|+|B|-|A intersect B| (generalized).",
+      "statement_latex": "|A union B| = |A|+|B|-|A intersect B|",
       "proof_md": "Count overlaps with alternating sums.",
       "conditions": "Finite sets",
       "tags": "combinatorics",
@@ -229,7 +229,7 @@
   "formulas": [
     {
       "name": "Quadratic Formula",
-      "latex": "x = (-b +/- sqrt(b^2-4ac))/(2a)",
+      "latex": "x = (-b +- sqrt(b^2-4ac))/(2a)",
       "meaning": "Roots of ax^2+bx+c=0.",
       "constraints": "a != 0",
       "examples": "",
@@ -237,7 +237,7 @@
     },
     {
       "name": "Euler Formula",
-      "latex": "e^{ix}=cos x + i sin x",
+      "latex": "e^(ix)=cos x + i sin x",
       "meaning": "Connect complex exponentials and trig.",
       "constraints": "x in R",
       "examples": "",
@@ -333,7 +333,7 @@
     },
     {
       "name": "Derivative Power Rule",
-      "latex": "d/dx x^n = n x^{n-1}",
+      "latex": "d/dx x^n = n x^(n-1)",
       "meaning": "Derivative of power function.",
       "constraints": "n real in domain",
       "examples": "",

@@ -1,12 +1,25 @@
-[
-  {"query": "pythagorean", "type": "theorem", "expected_title": "Pythagorean Theorem"},
-  {"query": "binomial", "type": "theorem", "expected_title": "Binomial Theorem"},
-  {"query": "bayes", "type": "theorem", "expected_title": "Bayes Theorem"},
-  {"query": "quadratic", "type": "formula", "expected_title": "Quadratic Formula"},
-  {"query": "euler", "type": "formula", "expected_title": "Euler Formula"},
-  {"query": "geometric series", "type": "formula", "expected_title": "Geometric Series"},
-  {"query": "triangle inequality", "type": "theorem", "expected_title": "Triangle Inequality"},
-  {"query": "rank nullity", "type": "theorem", "expected_title": "Rank-Nullity Theorem"},
-  {"query": "variance", "type": "formula", "expected_title": "Variance Formula"},
-  {"query": "chain rule", "type": "formula", "expected_title": "Chain Rule"}
-]
+{
+  "queries": [
+    {"q": "pythagorean", "type": "theorem", "expected": ["Pythagorean Theorem"]},
+    {"q": "binomial", "type": "theorem", "expected": ["Binomial Theorem"]},
+    {"q": "bayes", "type": "theorem", "expected": ["Bayes Theorem"]},
+    {"q": "cauchy", "type": "theorem", "expected": ["Cauchy-Schwarz Inequality"]},
+    {"q": "taylor", "type": "theorem", "expected": ["Taylor Theorem"]},
+    {"q": "stokes", "type": "theorem", "expected": ["Stokes' Theorem"]},
+    {"q": "divergence", "type": "theorem", "expected": ["Divergence Theorem"]},
+    {"q": "rank nullity", "type": "theorem", "expected": ["Rank-Nullity Theorem"]},
+    {"q": "inclusion exclusion", "type": "theorem", "expected": ["Inclusion-Exclusion Principle"]},
+    {"q": "fermat little", "type": "theorem", "expected": ["Fermat Little Theorem"]},
+
+    {"q": "quadratic formula", "type": "formula", "expected": ["Quadratic Formula"]},
+    {"q": "euler formula", "type": "formula", "expected": ["Euler Formula"]},
+    {"q": "geometric series", "type": "formula", "expected": ["Geometric Series"]},
+    {"q": "chain rule", "type": "formula", "expected": ["Chain Rule"]},
+    {"q": "integration by parts", "type": "formula", "expected": ["Integration by Parts"]},
+    {"q": "variance", "type": "formula", "expected": ["Variance Formula"]},
+    {"q": "covariance", "type": "formula", "expected": ["Covariance Formula"]},
+    {"q": "pearson correlation", "type": "formula", "expected": ["Pearson Correlation"]},
+    {"q": "matrix inverse 2x2", "type": "formula", "expected": ["Matrix Inverse 2x2"]},
+    {"q": "cross product magnitude", "type": "formula", "expected": ["Cross Product Magnitude"]}
+  ]
+}
