@@ -56,6 +56,7 @@ docs/
 ## Utility scripts
 
 - Generate 50 sample entries: `python scripts/generate_seed50.py`
+- Promote 50 entries to reviewed refs: `python scripts/promote_seed50_reviewed.py`
 - Check content quality: `python scripts/check_content_quality.py`
 - Ingest sample payload: `powershell -File scripts/ingest-sample.ps1`
 - Evaluate retrieval quality: `python scripts/eval_retrieval.py --api http://localhost:8000 --k 10`
