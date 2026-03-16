@@ -15,7 +15,7 @@ Build a runnable baseline for theorem/formula search with proof display and basi
 - Basic web demo page for search/detail and trace playback controls
 - API smoke tests and CI workflow
 - 50-sample seed generator (`scripts/generate_seed50.py`)
-- Reviewed reference promotion for 50 entries (`scripts/promote_seed50_reviewed.py`)
+- Reviewed reference promotion for seed pack (`scripts/promote_seed50_reviewed.py`)
 - Retrieval benchmark script (`scripts/eval_retrieval.py`)
 - Content quality checker (`scripts/check_content_quality.py`)
 - Content metadata fields (review status, source URL, source license)
