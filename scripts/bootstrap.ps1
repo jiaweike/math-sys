@@ -13,10 +13,18 @@ if (-not (Test-Path '.env')) {
     Write-Host 'Created .env from .env.example'
 }
 
+try {
+    docker info | Out-Null
+} catch {
+    throw "Docker engine is not reachable. Start Docker Desktop (or docker daemon) first."
+}
+
 if ($NoBuild) {
     docker compose up -d
 } else {
     docker compose up --build -d
 }
 
-Write-Host 'math-sys stack started. Open http://localhost:8000/docs'
+Write-Host 'math-sys stack started.'
+Write-Host 'API docs: http://localhost:8000/docs'
+Write-Host 'Web demo: http://localhost:3000'
